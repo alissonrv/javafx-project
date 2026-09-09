@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="437.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxproject.controller.CadastrarLivroController">
     <children>
-          <Label layoutX="124.0" layoutY="161.0" text="Nome">
+          <Label layoutX="124.0" layoutY="161.0" text="Título">
               <font>
                   <Font size="19.0" />
               </font>
@@ -23,10 +23,10 @@
                   <Font size="19.0" />
               </font>
           </Label>
-          <TextField layoutX="186.0" layoutY="161.0" prefHeight="28.0" prefWidth="346.0" />
-          <TextField layoutX="186.0" layoutY="190.0" prefHeight="28.0" prefWidth="346.0" />
-          <TextField layoutX="186.0" layoutY="219.0" prefHeight="28.0" prefWidth="346.0" />
-      <Button layoutX="178.0" layoutY="300.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text="Cadastrar">
+          <TextField fx:id="tituloTextField" layoutX="186.0" layoutY="161.0" prefHeight="28.0" prefWidth="346.0" />
+          <TextField fx:id="autorTextField" layoutX="186.0" layoutY="190.0" prefHeight="28.0" prefWidth="346.0" />
+          <TextField fx:id="anoTextField" layoutX="186.0" layoutY="219.0" prefHeight="28.0" prefWidth="346.0" promptText="Apenas números, ex: 1985" />
+      <Button fx:id="buttonCadastrar" layoutX="178.0" layoutY="300.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="34.0" prefWidth="103.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text="Cadastrar">
          <font>
             <Font size="17.0" />
          </font>
