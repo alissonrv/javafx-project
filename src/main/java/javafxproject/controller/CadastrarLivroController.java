@@ -16,14 +16,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class CadastrarLivroController implements Initializable {
-    @FXML
-    Button buttonCadastrar;
-    @FXML
-    TextField  tituloTextField;
-    @FXML
-    TextField autorTextField;
-    @FXML
-    TextField anoTextField;
+    @FXML private Button buttonCadastrar;
+    @FXML private TextField  tituloTextField, autorTextField, anoTextField;
 
     private void mostrarAlerta(Alert.AlertType tipo, String titulo, String mensagem) {
         Alert alert = new Alert(tipo);

@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxproject.controller.MenuController">
    <children>
-      <Button layoutX="450.0" layoutY="45.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="300.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text="Cadastrar Usuário">
+      <Button fx:id="buttonCadastrarUsuario" layoutX="450.0" layoutY="45.0" mnemonicParsing="false" onAction="#exibirCadastrarUsuario" prefHeight="60.0" prefWidth="300.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text="Cadastrar Usuário">
          <font>
             <Font size="28.0" />
          </font>

@@ -15,10 +15,7 @@ import java.io.IOException;
 import java.util.Optional;
 
 public class MenuController {
-    @FXML
-    Button buttonSair;
-    @FXML
-    Button buttonCadastrarLivro;
+    @FXML Button buttonCadastrarLivro,buttonCadastrarUsuario, buttonSair;
 
     @FXML public void sair(){
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -35,6 +32,14 @@ public class MenuController {
 
     @FXML public void exibirCadastrarLivro(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CadastrarLivroView.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 656, 437);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML public void exibirCadastrarUsuario(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("CadastroUsuarioView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 656, 437);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
