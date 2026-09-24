@@ -45,5 +45,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <Button fx:id="exibirTelaLogin" layoutX="85.0" layoutY="208.0" mnemonicParsing="false" onAction="#exibirTelaLogin" prefHeight="60.0" prefWidth="300.0" style="-fx-border-radius: 100; -fx-background-radius: 100;" text="Login">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

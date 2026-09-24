@@ -5,4 +5,5 @@ module com.example.javafxproject {
     opens javafxproject to javafx.fxml;
     opens javafxproject.controller to javafx.fxml;
     exports javafxproject;
+    opens javafxproject.utils to javafx.fxml;
 }

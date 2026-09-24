@@ -1,4 +1,4 @@
-package javafxproject.controller;
+package javafxproject.utils;
 
 import javafx.scene.control.TextField;
 
